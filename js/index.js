@@ -42,16 +42,20 @@ function setBgGreet() {
     if (hour < 12) {
         // Morning
         document.getElementById('welcome').style.backgroundImage = "url('./img/morning.jpg')";
+        document.getElementById('js-nav-bar').style.backgroundImage = "linear-gradient(260deg, #30E8BF 0%, #FF8235 100%)";
         greeting.textContent = 'GOOD MORNING, ';
 
     } else if (hour < 18) {
         // Afternoon
         document.getElementById('welcome').style.backgroundImage = "url('./img/afternoon.jpg')";
+        document.getElementById('js-nav-bar').style.backgroundImage = "linear-gradient(260deg, #C33764 0%, #1D2671 100%)";
         greeting.textContent = 'GOOD AFTERNOON, ';
 
     } else {
         // Night
         document.getElementById('welcome').style.backgroundImage = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./img/night.jpg')";
+        document.getElementById('js-nav-bar').style.backgroundImage = "linear-gradient(260deg, #41295a 0%, #2F0743 100%)";
+        document.getElementById('js-nav-bar').style.backgroundColor = '#11111';
         greeting.textContent = 'GOOD NIGHT, ';
         document.getElementById('welcome').style.color = 'white';
     }
@@ -143,11 +147,11 @@ $(document).ready(function () {
 /**
  * Stick the Navigation bar on Scroll
  */
-$(window).on('scroll',function(){
-    if($(window).scrollTop()){
+$(window).on('scroll', function () {
+    if ($(window).scrollTop()) {
         $('nav').addClass('sticky');
     }
-    else{
+    else {
         $('nav').removeClass('sticky');
     }
 })

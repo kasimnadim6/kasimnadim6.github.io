@@ -32,7 +32,7 @@
 
 /* Navbar for mobile-view */
 .nav-bar {
-  background-image: linear-gradient(260deg, #97198c 0%, #2a6485 100%);
+  /* background-image: linear-gradient(260deg, #97198c 0%, #2a6485 100%); */
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -76,6 +76,103 @@
   display: block;
 }
 
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  background-color: #313131;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin-right: 5px;
+  list-style: none;
+}
+
+.social-links a {
+  color: rgb(129, 127, 127);
+  text-decoration: none !important;
+}
+.social-links p {
+  font-size: 10px;
+}
+
+.facebook,
+.insta,
+.github,
+.linkedin,
+.google {
+  color: rgb(175, 175, 175);
+}
+
+.facebook:hover,
+.facebook ion-icon:hover {
+  color: #3c5a99;
+}
+.insta:hover,
+.insta ion-icon:hover {
+  color: #e1306c;
+}
+.linkedin:hover,
+.linkedin ion-icon:hover {
+  color: #007bb6;
+}
+.github:hover,
+.github ion-icon:hover {
+  color: #6e5494;
+}
+.google:hover,
+.google ion-icon:hover {
+  color: #dd4b39;
+}
+
+ion-icon {
+  font-size: 30px;
+  color: rgb(129, 127, 127);
+}
+
+.contact-info ion-icon {
+  font-size: 20px !important;
+  padding-top: 5px !important;
+}
+
+.contact-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-info a {
+  display: inline-flex;
+}
+.contact-info p {
+  font-size: 20px;
+  color: rgb(129, 127, 127);
+}
+.contact-info a :hover {
+  color: #dd4b39;
+}
+
+.copyright {
+  display: flex;
+  color: rgb(129, 127, 127);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* Navbar for webview */
 @media screen and (min-width: 768px) {
   #time {
@@ -107,7 +204,6 @@
   .sticky {
     position: fixed;
     z-index: 1;
-    background-image: linear-gradient(260deg, #c95555 0%, #512558 100%);
     top: 0;
     left: 0;
     width: 100%;
@@ -158,6 +254,32 @@
   .main-nav li:hover::after {
     transform: scaleX(1);
   } */
+
+  /* Footer */
+
+  .social-links a {
+    margin-right: 50px;
+  }
+
+  ion-icon {
+    font-size: 40px;
+    color: rgb(129, 127, 127);
+  }
+
+  .contact-info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-info a {
+    display: inline-flex;
+    margin-right: 30px;
+  }
+  .contact-info p {
+    margin-left: 5px;
+  }
 }
 
 /* Gallery */
